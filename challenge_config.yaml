@@ -5,18 +5,18 @@ short_description: DramaQA Challenge 2019
 description: templates/description.html                              # todo
 evaluation_details: templates/evaluation_details.html                # todo
 terms_and_conditions: templates/terms_and_conditions.html            # done
-image: logo.jpg                                                      # todo : 로고만들어야함
+image: logo.jpg                                                      # done : 로고 초안 완성
 submission_guidelines: templates/submission_guidelines.html          # todo : json format에 대한 설명
 leaderboard_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas a libero nec sagittis.
 evaluation_script: evaluation_script.zip
 remote_evaluation: False
-start_date: 2019-10-01 00:00:00  # done
+start_date: 2019-10-15 00:00:00  # done
 end_date: 2019-12-05 23:59:59    # done   
 published: True
 
 leaderboard:
   - id: 1
-    schema: { "labels": ["Metric1", "Metric2", "Metric3", "Total"], "default_order_by": "Total" }
+    schema: { "labels": ["Scene-level", "Shot-level", "Total"], "default_order_by": "Total" }
 
 challenge_phases:
   - id: 1
