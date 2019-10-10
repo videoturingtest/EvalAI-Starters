@@ -2,16 +2,16 @@
 # http://evalai.readthedocs.io/en/latest/challenge_creation.html#challenge-creation-using-zip-configuration
 title: DramaQA Challenge 2019 
 short_description: DramaQA Challenge 2019 
-description: templates/description.html                              # todo
-evaluation_details: templates/evaluation_details.html                # todo
-terms_and_conditions: templates/terms_and_conditions.html            # done
-image: logo.jpg                                                      # done : 로고 초안 완성
-submission_guidelines: templates/submission_guidelines.html          # todo : json format에 대한 설명
-leaderboard_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas a libero nec sagittis.
+description: templates/description.html                              # todo : 유원
+evaluation_details: templates/evaluation_details.html                # todo : 기천
+terms_and_conditions: templates/terms_and_conditions.html            
+image: logo.jpg                                                      # todo : 기천
+submission_guidelines: templates/submission_guidelines.html          # todo : 기천
+leaderboard_description: 
 evaluation_script: evaluation_script.zip
 remote_evaluation: False
-start_date: 2019-10-15 00:00:00  # done
-end_date: 2019-12-05 23:59:59    # done   
+start_date: 2019-10-15 00:00:00  
+end_date: 2019-12-05 23:59:59       
 published: True
 
 leaderboard:
@@ -20,54 +20,27 @@ leaderboard:
 
 challenge_phases:
   - id: 1
-    name: Dev Phase
+    name: DramaQA Dataset
     description: templates/challenge_phase_1_description.html
-    leaderboard_public: False
-    is_public: True
-    start_date: 2019-01-19 00:00:00
-    end_date: 2099-04-25 23:59:59
-    test_annotation_file: annotations/test_annotations_devsplit.json
-    codename: dev
-    max_submissions_per_day: 5
-    max_submissions_per_month: 50
-    max_submissions: 50
-  - id: 2
-    name: Test Phase
-    description: templates/challenge_phase_2_description.html
     leaderboard_public: True
     is_public: True
-    start_date: 2019-01-01 00:00:00
+    start_date: 2019-10-15 00:00:00
     end_date: 2099-05-24 23:59:59
-    test_annotation_file: annotations/test_annotations_testsplit.json
+    test_annotation_file: annotations/test_annotations_testsplit.json # todo
     codename: test
-    max_submissions_per_day: 5
-    max_submissions_per_month: 50
-    max_submissions: 50
+    max_submissions_per_day: 10
+    max_submissions_per_month: 10
+    max_submissions: 10
 
 dataset_splits:
   - id: 1
-    name: Train Split
-    codename: train_split
-  - id: 2
     name: Test Split
     codename: test_split
 
 challenge_phase_splits:
-  - challenge_phase_id: 1
-    leaderboard_id: 1
-    dataset_split_id: 1
-    visibility: 1
-    leaderboard_decimal_precision: 2
-    is_leaderboard_order_descending: True
-  - challenge_phase_id: 2
-    leaderboard_id: 1
-    dataset_split_id: 1
-    visibility: 3
-    leaderboard_decimal_precision: 2
-    is_leaderboard_order_descending: True
-  - challenge_phase_id: 2
-    leaderboard_id: 1
-    dataset_split_id: 2
-    visibility: 1
-    leaderboard_decimal_precision: 2
+  - challenge_phase_id: 1 
+    leaderboard_id: 1 
+    dataset_split_id: 1 
+    visibility: 3 
+    leaderboard_decimal_precision: 2 
     is_leaderboard_order_descending: True
