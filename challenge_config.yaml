@@ -2,8 +2,8 @@
 # http://evalai.readthedocs.io/en/latest/challenge_creation.html#challenge-creation-using-zip-configuration
 title: DramaQA Challenge 2019 
 short_description: DramaQA Challenge 2019 
-description: templates/description.html                              # todo : 유원
-evaluation_details: templates/evaluation_details.html                # todo : 기천
+description: templates/description.html                              # 유원 : 챌린지 전반에 관련된 description
+evaluation_details: templates/evaluation_details.html                # 유원 : DramaQA 모델 평가 메트릭에 관련된 설명(Scene, shot, overall performance) 
 terms_and_conditions: templates/terms_and_conditions.html            
 image: logo.jpg                                                      # todo : 기천
 submission_guidelines: templates/submission_guidelines.html          # todo : 기천
@@ -11,7 +11,7 @@ leaderboard_description:
 evaluation_script: evaluation_script.zip
 remote_evaluation: False
 start_date: 2019-10-15 00:00:00  
-end_date: 2019-12-05 23:59:59       
+end_date: 2019-12-31 23:59:59       
 published: True
 
 leaderboard:
@@ -25,8 +25,8 @@ challenge_phases:
     leaderboard_public: True
     is_public: True
     start_date: 2019-10-15 00:00:00
-    end_date: 2099-05-24 23:59:59
-    test_annotation_file: annotations/test_annotations_testsplit.json # todo
+    end_date: 2019-12-05 23:59:59
+    test_annotation_file: annotations/test_annotations_testsplit.json # todo : 기천
     codename: test
     max_submissions_per_day: 10
     max_submissions_per_month: 10
